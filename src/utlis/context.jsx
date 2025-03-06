@@ -15,8 +15,8 @@ const TodoProvider = ({ children }) => {
       const response = await axios.get(
         "https://todolistapp-production.up.railway.app/tasks/"
       );
+
       setTodo(response.data);
-      console.log(response.data);
     };
     fetchData();
   }, []);
